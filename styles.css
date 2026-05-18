@@ -728,25 +728,27 @@ p {
   background: linear-gradient(180deg, transparent 55%, rgba(11, 37, 69, 0.35));
   pointer-events: none;
 }
-.card > .card-icon,
-.card > h3,
-.card > p,
-.card > .card-list,
-.card > .card-link {
-  margin-left: 28px;
-  margin-right: 28px;
-}
 .card > .card-icon {
-  margin-top: -28px;
+  margin: -28px 0 0 28px;
   position: relative;
   z-index: 1;
   box-shadow: var(--shadow-sm);
 }
-.card > h3 {
-  margin-top: 18px;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 28px 28px;
 }
-.card > .card-link {
-  margin-bottom: 28px;
+.card-body h3 {
+  margin: 0 0 10px;
+}
+.card-body p {
+  margin: 0 0 4px;
+}
+.card-body .card-link {
+  margin-top: auto;
+  padding-top: 16px;
 }
 .card-feature {
   background: linear-gradient(180deg, var(--navy-900), var(--navy-800));
